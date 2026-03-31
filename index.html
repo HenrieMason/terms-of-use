@@ -14,41 +14,31 @@
       --link: #06c;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.65;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
     }
 
     .topbar {
       width: 100%;
       background: rgba(245, 245, 247, 0.8);
-      backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: blur(20px);
       border-bottom: 1px solid rgba(0, 0, 0, 0.06);
       position: sticky;
       top: 0;
-      z-index: 10;
     }
 
     .topbar-inner {
       max-width: 980px;
       margin: 0 auto;
       padding: 14px 20px;
-      font-size: 14px;
       font-weight: 600;
-      letter-spacing: -0.01em;
     }
 
     .hero {
@@ -57,29 +47,14 @@
       padding: 56px 20px 28px;
     }
 
-    .eyebrow {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--subtle);
-      letter-spacing: -0.01em;
-      margin-bottom: 10px;
-    }
-
     h1 {
-      font-size: clamp(40px, 7vw, 64px);
-      line-height: 1.05;
-      letter-spacing: -0.03em;
+      font-size: 48px;
       margin: 0 0 16px;
-      font-weight: 700;
     }
 
     .intro {
-      max-width: 720px;
-      font-size: 21px;
-      line-height: 1.38;
+      font-size: 20px;
       color: var(--subtle);
-      letter-spacing: -0.01em;
-      margin: 0;
     }
 
     .content-wrap {
@@ -92,8 +67,6 @@
       background: var(--card);
       border-radius: 24px;
       padding: 32px;
-      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
-      border: 1px solid rgba(0, 0, 0, 0.04);
     }
 
     .meta {
@@ -107,198 +80,127 @@
       border-top: 1px solid var(--line);
     }
 
-    .section:first-of-type {
-      border-top: none;
-      padding-top: 0;
-    }
+    .section:first-of-type { border-top: none; }
 
-    h2 {
-      font-size: 24px;
-      line-height: 1.2;
-      letter-spacing: -0.02em;
-      margin: 0 0 14px;
-      font-weight: 600;
-    }
+    h2 { font-size: 22px; margin-bottom: 12px; }
 
-    p {
-      margin: 0 0 14px;
-      font-size: 17px;
-    }
+    p { margin-bottom: 12px; }
 
-    ul {
-      margin: 0;
-      padding-left: 22px;
-    }
+    ul { padding-left: 20px; }
 
-    li {
-      margin: 8px 0;
-      font-size: 17px;
-    }
-
-    a {
-      color: var(--link);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
+    li { margin: 6px 0; }
 
     .footer {
       max-width: 980px;
       margin: 0 auto;
-      padding: 0 20px 56px;
-      color: var(--subtle);
+      padding: 20px;
       font-size: 13px;
-    }
-
-    @media (max-width: 640px) {
-      .hero {
-        padding-top: 40px;
-      }
-
-      .intro {
-        font-size: 19px;
-      }
-
-      .card {
-        padding: 24px 20px;
-        border-radius: 18px;
-      }
-
-      h2 {
-        font-size: 22px;
-      }
-
-      p, li {
-        font-size: 16px;
-      }
+      color: var(--subtle);
     }
   </style>
 </head>
 <body>
-  <div class="topbar">
-    <div class="topbar-inner">CarScene</div>
-  </div>
 
-  <header class="hero">
-    <div class="eyebrow">Legal</div>
-    <h1>Terms of Use</h1>
-    <p class="intro">
-      These Terms of Use govern your use of CarScene. By accessing or using the app, you agree to these terms.
-    </p>
-  </header>
+<div class="topbar">
+  <div class="topbar-inner">CarScene</div>
+</div>
 
-  <main class="content-wrap">
-    <section class="card">
-      <div class="meta">Last updated: March 23, 2026</div>
+<header class="hero">
+  <h1>Terms of Use</h1>
+  <p class="intro">
+    These Terms of Use govern your use of CarScene. By using the app, you agree to these terms.
+  </p>
+</header>
 
-      <div class="section">
-        <h2>1. Acceptance of Terms</h2>
-        <p>
-          By using CarScene, you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use the app.
-        </p>
-      </div>
+<main class="content-wrap">
+  <section class="card">
+    <div class="meta">Last updated: March 31, 2026</div>
 
-      <div class="section">
-        <h2>2. Use of CarScene</h2>
-        <p>
-          CarScene is provided for personal, non-commercial use. You agree to use the app only in a lawful manner and in accordance with these terms.
-        </p>
-      </div>
+    <div class="section">
+      <h2>1. Acceptance of Terms</h2>
+      <p>By using CarScene, you agree to these Terms of Use. If you do not agree, do not use the app.</p>
+    </div>
 
-      <div class="section">
-        <h2>3. Accounts and Access</h2>
-        <p>
-          Some features of CarScene may require account sign-in or cloud syncing. You are responsible for maintaining the security of your account and device.
-        </p>
-        <p>
-          You are also responsible for any activity that occurs through your account, to the extent permitted by law.
-        </p>
-      </div>
+    <div class="section">
+      <h2>2. Use of CarScene</h2>
+      <p>CarScene is provided for personal, non-commercial use. You agree to use it lawfully and responsibly.</p>
+    </div>
 
-      <div class="section">
-        <h2>4. App Content and Features</h2>
-        <p>
-          CarScene allows users to track vehicles, save progress, build garages, and use other related features. We may update, improve, modify, suspend, or remove features at any time.
-        </p>
-      </div>
+    <div class="section">
+      <h2>3. Accounts</h2>
+      <p>You are responsible for maintaining the security of your account and any activity under it.</p>
+    </div>
 
-      <div class="section">
-        <h2>5. In-App Purchases</h2>
-        <p>
-          CarScene may offer optional in-app purchases. All purchases are processed by the platform provider, such as Apple or Google, and are subject to that platform’s terms and policies.
-        </p>
-        <p>
-          Except where required by law or platform policy, purchases are non-refundable and non-transferable.
-        </p>
-      </div>
+    <div class="section">
+      <h2>4. Social Features</h2>
+      <p>
+        CarScene includes social features such as searching for users, sending friend requests, and viewing profiles.
+      </p>
+      <p>
+        You agree to use these features respectfully and not to misuse them.
+      </p>
+    </div>
 
-      <div class="section">
-        <h2>6. Acceptable Use</h2>
-        <p>You agree not to:</p>
-        <ul>
-          <li>Use CarScene for unlawful or unauthorized purposes</li>
-          <li>Interfere with, disrupt, or attempt to gain unauthorized access to the app or its related systems</li>
-          <li>Exploit bugs, manipulate app functionality, or attempt to bypass intended limitations or protections</li>
-          <li>Copy, reverse engineer, modify, or redistribute the app except where allowed by law</li>
-        </ul>
-      </div>
+    <div class="section">
+      <h2>5. Acceptable Behavior</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Spam or repeatedly send unwanted friend requests</li>
+        <li>Harass, threaten, or abuse other users</li>
+        <li>Attempt to discover or collect user data through automated or abusive methods</li>
+        <li>Impersonate another user</li>
+      </ul>
+      <p>
+        We may limit, suspend, or terminate accounts that violate these rules.
+      </p>
+    </div>
 
-      <div class="section">
-        <h2>7. Intellectual Property</h2>
-        <p>
-          CarScene, including its design, branding, text, graphics, and software, is owned by Henrie Studios or its licensors and is protected by applicable intellectual property laws.
-        </p>
-      </div>
+    <div class="section">
+      <h2>6. In-App Purchases</h2>
+      <p>Purchases are handled by Apple or Google and follow their policies. They are generally non-refundable.</p>
+    </div>
 
-      <div class="section">
-        <h2>8. Data and Privacy</h2>
-        <p>
-          Your use of CarScene is also subject to our Privacy Policy, which explains how information may be collected, used, and stored.
-        </p>
-      </div>
+    <div class="section">
+      <h2>7. Intellectual Property</h2>
+      <p>All app content belongs to Henrie Studios and is protected by law.</p>
+    </div>
 
-      <div class="section">
-        <h2>9. Availability and Changes</h2>
-        <p>
-          We do not guarantee that CarScene will always be available, uninterrupted, or error-free. We may change or discontinue parts of the app at any time without notice.
-        </p>
-      </div>
+    <div class="section">
+      <h2>8. Privacy</h2>
+      <p>Your use of CarScene is also governed by our Privacy Policy.</p>
+    </div>
 
-      <div class="section">
-        <h2>10. Disclaimer of Warranties</h2>
-        <p>
-          CarScene is provided on an “as is” and “as available” basis without warranties of any kind, whether express or implied, to the fullest extent permitted by law.
-        </p>
-      </div>
+    <div class="section">
+      <h2>9. Changes</h2>
+      <p>We may modify or discontinue features at any time.</p>
+    </div>
 
-      <div class="section">
-        <h2>11. Limitation of Liability</h2>
-        <p>
-          To the fullest extent permitted by law, Henrie Studios shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from or related to your use of CarScene.
-        </p>
-      </div>
+    <div class="section">
+      <h2>10. Disclaimer</h2>
+      <p>The app is provided "as is" without warranties.</p>
+    </div>
 
-      <div class="section">
-        <h2>12. Changes to These Terms</h2>
-        <p>
-          We may update these Terms of Use from time to time. Any updates will be posted on this page, and the “Last updated” date will be revised accordingly.
-        </p>
-      </div>
+    <div class="section">
+      <h2>11. Liability</h2>
+      <p>We are not liable for damages arising from use of the app to the extent permitted by law.</p>
+    </div>
 
-      <div class="section">
-        <h2>13. Contact</h2>
-        <p>
-          If you have any questions about these Terms of Use, contact:
-        </p>
-        <p><a href="mailto:henriestudios@gmail.com">henriestudios@gmail.com</a></p>
-      </div>
-    </section>
-  </main>
+    <div class="section">
+      <h2>12. Updates to Terms</h2>
+      <p>We may update these terms. Continued use means you accept changes.</p>
+    </div>
 
-  <footer class="footer">
-    © 2026 CarScene. All rights reserved.
-  </footer>
+    <div class="section">
+      <h2>13. Contact</h2>
+      <p><a href="mailto:henriestudios@gmail.com">henriestudios@gmail.com</a></p>
+    </div>
+
+  </section>
+</main>
+
+<footer class="footer">
+  © 2026 CarScene. All rights reserved.
+</footer>
+
 </body>
 </html>
